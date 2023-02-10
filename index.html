@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="nav-container" class="containers">
-        <div class="containers-games">Elden Ring</div>
-        <div class="containers-games">Cult of the Lamb</div>
-        <div class="containers-games">League of Legends</div>
-        <div id="container-gamepicker">Game Picker</div>
-    </div>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
-    <main style="width: 1000px; margin: 0; margin-left: 20%; margin-right: 20%; margin-top: 10px;display: block;">
-        <div style="display: flex;">
-            <div style="height: 200px; width: 70%;"class="containers">
-                Game box
+</head>
+    <body style="background-color: white;">
+
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Elden Ring</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Hollow Knight</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sekiro Shadows Die Twice</a>
+                </li>
+            </ul>
+            <button class="btn btn-secondary" type="button">Game Picker</button>
             </div>
-            <div style="height: 200px; width: 30%;" class="containers">
-                Rating box
+        </div>
+        </nav>
+
+        <main style="width: 1000px; margin: 0; margin-left: 20%; margin-right: 20%; margin-top: 10px;display: block;">
+
+            <!-- The Game Page + The Rating Box -->
+
+            <div style="display: flex;">
+                <div style="height: 250px; width: 70%; padding:10px;"class="containers">
+                    <h2>Elden Ring</h2>
+                    <article style="margin-top: 20px;">
+                        EEN NIEUW WONDERBAARLIJK AVONTUUR STAAT JE TE WACHTEN.
+                        Verrijs, Bezoedelden, en laat je leiden door genade om de kracht van de Elden Ring te gebruiken en een Elden Lord in The Lands Between te worden.
+                    </article>
+
+                    <div style="margin-top: 35px; display: flex;">
+                        <div class="card" style="background: lightblue; width:max-content; margin-right: 10px;">
+                            <div class="card-body">
+                                Souls-achtig
+                            </div>
+                        </div>
+                        <div class="card" style="background: lightblue; width:max-content;  margin-right: 10px;">
+                            <div class="card-body">
+                                Duistere Fantasie
+                            </div>
+                        </div>
+                        <div class="card" style="background: lightblue; width:max-content;  margin-right: 10px;">
+                            <div class="card-body">
+                                RPG
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 250px; width: 30%; padding:10px" class="containers">
+                    <p style="font-weight:bold; margin-bottom:5px;">Rating ⭐ ⭐ ⭐ ⭐ ⭐ </p>
+                    <p style="font-weight:bold; margin-bottom:5px;">Single player</p>
+                    <p style="font-weight:bold; margin-bottom:5px;">Online PvP</p>
+                </div>
             </div>
-        </div>
-        <div style="height:150px" class="containers">
-            Containers Screenshots
-        </div>
-        <div style="height: 250px;"class="containers">
-            Systeemeisen
-        </div>
-        <div style="height: 250px;"class="containers">
-            Recenties
-        </div>
-    </main>
-</body>
+            <div style="height:225px; display: flex; align-items: center;  gap: 10px;" class="containers">
+                <img style="width: auto; height:200px; margin-left: 10px"  src="https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1024&amp;imh=576&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" srcset="https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=320&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 320w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=640&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 640w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1024&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 1024w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1920&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 1920w" sizes="100vw">
+                <img style="width: auto; height:200px"  src="https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1024&amp;imh=576&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" srcset="https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=320&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 320w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=640&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 640w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1024&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 1024w, https://steamuserimages-a.akamaihd.net/ugc/2027218195942059267/04DE646F7E9BFAB503869334A4BE069A57516001/?imw=1920&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false 1920w" sizes="100vw">
+            </div>
+
+
+
+
+
+            <div style="height: 250px;"class="containers">
+                Systeemeisen
+            </div>
+            <div style="height: 250px;"class="containers">
+                Recenties
+            </div>
+        </main>
+    </body>
 </html>

@@ -1,3 +1,7 @@
+p{
+    font-family: sans-serif;
+}
+
 .headers{ 
     margin-top: 5px;
     font-weight: bold;
@@ -42,12 +46,13 @@
 .tag-text{
     font-weight: bold;
 }
+
 .systeemeisen-list li{
     margin-bottom: 5px;
 }
 
 .recenties-list li{
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .recenties-text{

@@ -1,3 +1,9 @@
+.headers{ 
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: sans-serif;
+}
 
 .containers{
     border: 1px solid lightslategray;
@@ -31,4 +37,21 @@
     align-items: center;
     position: absolute;
     right: 22px;
+}
+
+.tag-text{
+    font-weight: bold;
+}
+.systeemeisen-list li{
+    margin-bottom: 5px;
+}
+
+.recenties-list li{
+    margin-bottom: 10px;
+}
+
+.recenties-text{
+    font-size: 18px;
+    font-family: sherrif;
+    margin: 0px;
 }
